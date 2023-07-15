@@ -1,0 +1,20 @@
+<!-- <h2>Input your text here</h2>
+<form action="counter" method="post">
+    {% csrf_token %}
+
+    <textarea name="words" cols="120" rows="30"></textarea><br><hr>
+
+
+    <input type="submit">
+    <input type="reset">
+</form> -->
+
+<h1>Find Words Here. </h1>
+<form action="find_words" method="post">
+    {% csrf_token %}
+    <textarea name="words" cols="30" rows="10"></textarea><br>
+    <input type="text" name="to_find">
+    <input type="submit">
+    <input type="reset">
+
+</form>
